@@ -79,6 +79,6 @@ public class BasketService : IBasketService
             userBasket.AddItem(item.CatalogItemId, item.UnitPrice, item.Quantity);
         }
         await _basketRepository.UpdateAsync(userBasket);
-        await _basketRepository.DeleteAsync(anonymousBasket);
+        //await _basketRepository.DeleteAsync(anonymousBasket);
     }
 }
