@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Ardalis.GuardClauses;
 using Microsoft.eShopWeb.ApplicationCore.Exceptions;
 using Microsoft.eShopWeb.ApplicationCore.Interfaces;
 
@@ -30,7 +28,6 @@ public class Basket : BaseEntity, IAggregateRoot
             //    return;
 
             _items.Add(new BasketItem(catalogItemId, quantity, unitPrice));
-            return;
         }
         else
         {
